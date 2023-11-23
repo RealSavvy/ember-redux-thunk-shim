@@ -7,7 +7,7 @@ module.exports = {
   name: 'redux-thunk',
 
   treeForAddon (tree) {
-    const reduxThunkPath = path.dirname(require.resolve('redux-thunk/src/index.js'))
+    const reduxThunkPath = path.dirname(require.resolve('redux-thunk/lib/index.js'))
     let reduxThunkTree = this.treeGenerator(reduxThunkPath)
 
     if (!tree) {
